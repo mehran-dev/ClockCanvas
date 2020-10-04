@@ -1,0 +1,91 @@
+.leftClocks {}
+
+.rightClocks {}
+
+.ctr {
+    height: max-content;
+    border: 6px solid red;
+}
+
+
+
+.clockContainer {
+    background   : linear-gradient(to right bottom, red, rgb(49, 0, 0));
+    min-width    : max-content;
+    width        : 180px;
+    height       : 220px;
+    margin       : 3px auto;
+    padding      : 3px 6px;
+    transform    : scale(0.9) !important;
+    border-radius: 3px;
+    box-shadow   : 2px 2px 3px rgb(0, 0, 26);
+    text-align   : center;
+}
+
+.clockContainer.main {
+    /*     width           : 200px;
+    height                 : 250px; */
+    text-align: center;
+    position  : relative;
+
+
+
+}
+
+.clockContainer canvas {
+    width        : 150px;
+    height       : 150px;
+    border-radius: 6000px;
+    margin-top   : 12px;
+    margin-left  : auto;
+    margin-right : auto;
+}
+
+.clockContainer h6 {
+
+    text-align      : center;
+    background-color: rgba(255, 255, 255, 1);
+    color           : rgb(70, 0, 0);
+    margin-top      : 6px;
+    margin-bottom   : 6px;
+    width           : 80%;
+    margin-left     : auto;
+    margin-right    : auto;
+    border-radius   : 6px;
+    padding         : 3px 0;
+
+}
+
+
+/* jcgmt-container */
+#tehranClock {
+    margin        : 0 auto;
+    display       : inline-block;
+    width         : 100%;
+    text-align    : center;
+    display       : table;
+    vertical-align: middle;
+    position      : relative;
+    top           : 0px;
+    margin-top    : 3px;
+
+
+}
+
+.jcgmt-clockHolder {}
+
+.jcgmt-lbl {
+
+    line-height  : 1 !important;
+    font-size    : medium !important;
+    margin-bottom: 30px !important;
+    height       : 25px !important;
+    width        : 80% !important;
+    border-radius: 6px;
+    background   : #fff !important;
+    padding      : 3px 0 !important;
+}
+
+.jcgmt-digital {
+    display: none;
+}

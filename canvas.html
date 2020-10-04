@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="owl.carousel.min.css">
+  <link rel="stylesheet" href="owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/jClocksGMT.css">
+  <link rel="stylesheet" href="./css/clock.css">
+
+</head>
+
+<body>
+
+  <div class="container ctr">
+    <div class="row">
+      <div class=" col-lg-9 col-md-8 col-sm-7 col-xs-6 col-12 bgG">
+        <div class="owl-carousel clocks leftClocks">
+          <div class="clockContainer A">
+            <h6> </h6>
+
+            <canvas id="canvas" width="200px" height="200px" style="background-color:#333">
+            </canvas>
+          </div>
+
+
+
+          <div class="clockContainer B">
+            <h6></h6>
+
+            <canvas id="canvas1" width="400" height="400" style="background-color:#333">
+            </canvas>
+          </div>
+
+
+
+
+
+          <div class="clockContainer C">
+            <h6></h6>
+
+            <canvas id="canvas2" width="400" height="400" style="background-color:#333">
+            </canvas>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-4 col-sm-5 col-xs-6  col-12 ">
+        <div class="rightClocks">
+
+          <div class="clockContainer main">
+            <div id="tehranClock"></div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/jClocksGMT.js"></script>
+  <script src="./js/jquery.rotate.js"></script>
+
+
+
+
+
+
+
+  <script src="js.js"></script>
+  <script src="./owl.js"></script>
+
+
+
+  <script src="owl.carousel.min.js"></script>
+
+
+  <script>
+    $(document).ready(function () {
+
+      $("#tehranClock").jClocksGMT({
+        title: "تهران",
+        offset: "3.5",
+        skin: 5
+      })
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
